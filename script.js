@@ -2,6 +2,8 @@
 
 // Set up the variables for the calculation
 
+console.log(`====== EDX Challenge =====`);
+
 let playerSalaryA;
 let playerSalaryB;
 let playerSalaryC;
@@ -38,4 +40,31 @@ if (totalSalary <= spendingLimit) {
       taxRate * 100
     }% of £${taxableAmount}.`
   );
+}
+
+console.log(`********************************`);
+console.log(`*********** next little challenge ***********`);
+
+// Calculate average score for each team using this data:
+
+// TEST DATA: Dolphins scored 96, 108, and 89. Koalas scored 88, 91, and 110.
+
+// using const as I don't need the variable to change:
+
+const scoreDolphins = (96 + 108 + 89) / 3;
+const scoreKoalas = (96 + 108 + 89) / 3;
+
+console.log(`Here are the average scores for each team.`);
+console.log(`Dolpins ${scoreDolphins} and Koalas${scoreKoalas}`);
+
+// Who is the winner of the contest - whoever has the highest average score wins
+
+if (scoreDolphins > scoreKoalas) {
+  console.log(
+    `The Dolphins win because ${scoreDolphins} is greater than ${scoreKoalas} 😀`
+  );
+} else if (scoreKoalas > scoreDolphins) {
+  console.log(`The Koalas win because their score is higher 😀 `);
+} else if (scoreDolphins === scoreKoalas) {
+  console.log(`Draw - we don't have a winner`);
 }
